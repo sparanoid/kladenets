@@ -46,6 +46,7 @@
   --text-color-hsl: var(--text-color-h), var(--text-color-s), var(--text-color-l);
 
   --text-color: hsl(var(--text-color-hsl));
+  --text-color-0: hsla(var(--text-color-hsl), 0);
   --text-color-3: hsla(var(--text-color-hsl), .03);
   --text-color-5: hsla(var(--text-color-hsl), .05);
   --text-color-7: hsla(var(--text-color-hsl), .07);
@@ -68,6 +69,7 @@
   --link-color-hsl: var(--link-color-h), var(--link-color-s), var(--link-color-l);
 
   --link-color: hsl(var(--link-color-hsl));
+  --link-color-0: hsla(var(--link-color-hsl), 0);
   --link-color-3: hsla(var(--link-color-hsl), .03);
   --link-color-5: hsla(var(--link-color-hsl), .05);
   --link-color-7: hsla(var(--link-color-hsl), .07);
@@ -90,6 +92,7 @@
   --bg-color-hsl: var(--bg-color-h), var(--bg-color-s), var(--bg-color-l);
 
   --bg-color: hsl(var(--bg-color-hsl));
+  --bg-color-0: hsla(var(--bg-color-hsl), 0);
   --bg-color-3: hsla(var(--bg-color-hsl), .03);
   --bg-color-5: hsla(var(--bg-color-hsl), .05);
   --bg-color-7: hsla(var(--bg-color-hsl), .07);
@@ -112,6 +115,7 @@
   --code-color-hsl: var(--code-color-h), var(--code-color-s), var(--code-color-l);
 
   --code-color: hsl(var(--code-color-hsl));
+  --code-color-0: hsla(var(--code-color-hsl), 0);
   --code-color-3: hsla(var(--code-color-hsl), .03);
   --code-color-5: hsla(var(--code-color-hsl), .05);
   --code-color-7: hsla(var(--code-color-hsl), .07);
