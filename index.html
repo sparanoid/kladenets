@@ -1,0 +1,116 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>Root Variables by Sparanoid</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="root-vars.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<h1>
+  Root Variables.
+  <br>
+  Future-proof native CSS variables in your <code>:root</code> by <a href="https://sparanoid.com/">Sparanoid</a>.
+</h1>
+
+<p>
+  Inspect in your web browser or view page source to see how it works.
+</p>
+
+<h2>
+  Colors
+</h2>
+
+<h3>Text Color</h3>
+<div class="flex">
+  <div style="background-color: var(--text-color-3)"></div>
+  <div style="background-color: var(--text-color-5)"></div>
+  <div style="background-color: var(--text-color-7)"></div>
+  <div style="background-color: var(--text-color-10)"></div>
+  <div style="background-color: var(--text-color-20)"></div>
+  <div style="background-color: var(--text-color-30)"></div>
+  <div style="background-color: var(--text-color-40)"></div>
+  <div style="background-color: var(--text-color-50)"></div>
+  <div style="background-color: var(--text-color-60)"></div>
+  <div style="background-color: var(--text-color-70)"></div>
+  <div style="background-color: var(--text-color-80)"></div>
+  <div style="background-color: var(--text-color-90)"></div>
+  <div style="background-color: var(--text-color)"></div>
+</div>
+
+<h3>Link Color</h3>
+<div class="flex">
+  <div style="background-color: var(--link-color-3)"></div>
+  <div style="background-color: var(--link-color-5)"></div>
+  <div style="background-color: var(--link-color-7)"></div>
+  <div style="background-color: var(--link-color-10)"></div>
+  <div style="background-color: var(--link-color-20)"></div>
+  <div style="background-color: var(--link-color-30)"></div>
+  <div style="background-color: var(--link-color-40)"></div>
+  <div style="background-color: var(--link-color-50)"></div>
+  <div style="background-color: var(--link-color-60)"></div>
+  <div style="background-color: var(--link-color-70)"></div>
+  <div style="background-color: var(--link-color-80)"></div>
+  <div style="background-color: var(--link-color-90)"></div>
+  <div style="background-color: var(--link-color)"></div>
+</div>
+
+
+<h3>Background Color</h3>
+<p>
+  With a darker background to demostrate the <code>--bg-color</code>, inspect them in your browser.
+</p>
+<div class="background-wrap">
+  <div class="flex">
+    <div style="background-color: var(--bg-color-3)"></div>
+    <div style="background-color: var(--bg-color-5)"></div>
+    <div style="background-color: var(--bg-color-7)"></div>
+    <div style="background-color: var(--bg-color-10)"></div>
+    <div style="background-color: var(--bg-color-20)"></div>
+    <div style="background-color: var(--bg-color-30)"></div>
+    <div style="background-color: var(--bg-color-40)"></div>
+    <div style="background-color: var(--bg-color-50)"></div>
+    <div style="background-color: var(--bg-color-60)"></div>
+    <div style="background-color: var(--bg-color-70)"></div>
+    <div style="background-color: var(--bg-color-80)"></div>
+    <div style="background-color: var(--bg-color-90)"></div>
+    <div style="background-color: var(--bg-color)"></div>
+  </div>
+</div>
+
+<h3>Code Color</h3>
+<p>This color, is inverted based on <code>--link-color</code>. Inspect it in your browser at the <code>&lt;html&gt;</code> node to see how it works.</p>
+<div class="flex">
+  <div style="background-color: var(--code-color-3)"></div>
+  <div style="background-color: var(--code-color-5)"></div>
+  <div style="background-color: var(--code-color-7)"></div>
+  <div style="background-color: var(--code-color-10)"></div>
+  <div style="background-color: var(--code-color-20)"></div>
+  <div style="background-color: var(--code-color-30)"></div>
+  <div style="background-color: var(--code-color-40)"></div>
+  <div style="background-color: var(--code-color-50)"></div>
+  <div style="background-color: var(--code-color-60)"></div>
+  <div style="background-color: var(--code-color-70)"></div>
+  <div style="background-color: var(--code-color-80)"></div>
+  <div style="background-color: var(--code-color-90)"></div>
+  <div style="background-color: var(--code-color)"></div>
+</div>
+
+<h2>
+  Buttons
+</h2>
+
+<p>Bootstrap-like buttons. All color schemes are tweaked dynamically based on primary color.</p>
+
+<p>At the moment, CSS doesn't support "nesting" varaible override, so you have to define all variables you need to use in that scope.</p>
+
+<button class="primary">Primary</button>
+<button class="secondary">Secondary</button>
+<button class="success">Success</button>
+<button class="danger">Danger</button>
+<button class="warning">Warning</button>
+<button class="info">Info</button>
+<button class="light">Light</button>
+<button class="dark">Dark</button>
+<button class="link">Link</button>
+<button class="invert">Invert</button>
