@@ -1,0 +1,156 @@
+body {
+  color: var(--text-color);
+  font-family: var(--fontstack-prefix) var(--fontstack-sans-serif);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  padding: var(--space-xs);
+  background: var(--bg-color);
+  font-feature-settings: var(--font-features);
+  text-size-adjust: none;
+  text-rendering: optimizelegibility;
+  image-rendering: optimizequality;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: 300%;
+  line-height: 1;
+}
+
+h2 {
+  margin-top: 2em;
+}
+
+h3 {
+  margin: 2em 0 .4em;
+}
+
+pre,
+code {
+  font-family: var(--fontstack-monospace);
+  color: var(--code-color);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex > div {
+  flex: 1;
+  height: calc(100vw / 13);
+}
+
+.background-wrap {
+  padding: var(--space-xs);
+  margin: calc(var(--space-xs) * -1);
+  background: var(--text-color-50);
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--link-color-light);
+}
+
+/*
+  Demostrate how to define a set of different color schemes for buttons based
+  on Root Variables
+*/
+button {
+  --btn-bg-h: var(--link-color-h);
+  --btn-bg-s: var(--link-color-s);
+  --btn-bg-l: var(--link-color-l);
+  --btn-bg-hsl: var(--btn-bg-h), var(--btn-bg-s), var(--btn-bg-l);
+
+  --btn-bg: hsl(var(--btn-bg-hsl));
+  --btn-bg-factor: .9;
+  --btn-bg-light: hsl(var(--btn-bg-h), var(--btn-bg-s), calc(var(--btn-bg-l) / var(--btn-bg-factor)));
+  --btn-bg-dark: hsl(var(--btn-bg-h), var(--btn-bg-s), calc(var(--btn-bg-l) * var(--btn-bg-factor)));
+  --btn-bg-border: hsla(var(--btn-bg-hsl), .4);
+
+  --btn-text: var(--bg-color);
+
+  appearance: none;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border-radius: 4px;
+  border: none;
+  padding: .5em 1em;
+  margin-bottom: 1em;
+  font-size: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  transition: box-shadow .2s ease;
+}
+
+button:hover {
+  background-color: var(--btn-bg-light);
+}
+
+button:active {
+  background-color: var(--btn-bg-dark);
+}
+
+button:active:focus {
+  box-shadow: 0 0 0 .15em var(--btn-bg-border);
+}
+
+button.secondary {
+  --btn-bg-s: 10%;
+  --btn-bg-l: 60%;
+}
+
+button.success {
+  --btn-bg-h: 140;
+  --btn-bg-s: 80%;
+  --btn-bg-l: 40%;
+}
+
+button.danger {
+  --btn-bg-h: 347;
+  --btn-bg-factor: .85;
+}
+
+button.warning {
+  --btn-bg-h: 50;
+  --btn-text: var(--text-color);
+}
+
+button.info {
+  --btn-bg-h: -170;
+  --btn-bg-s: 80%;
+}
+
+button.light {
+  --btn-bg-s: 20%;
+  --btn-bg-l: 95%;
+  --btn-bg-factor: .98;
+  --btn-text: var(--text-color);
+}
+
+button.dark {
+  --btn-bg-h: var(--text-color-h);
+  --btn-bg-l: 5%;
+  --btn-bg-factor: .5;
+}
+
+button.link {
+  --btn-bg-h: var(--link-color-h);
+  --btn-bg-s: var(--link-color-s);
+  --btn-bg-l: 100%;
+  --btn-bg-factor: .96;
+  --btn-text: var(--link-color);
+}
+
+button.link:hover {
+  color: var(--link-color-light);
+  text-decoration: underline;
+}
+
+button.invert {
+  /* just invert link color */
+  --btn-bg-h: calc(var(--link-color-h) + 180);
+}
