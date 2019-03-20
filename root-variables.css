@@ -39,7 +39,7 @@
     Colors
   ----------------------------------------------------------------------------*/
 
-	/* Color - text color */
+  /* Color - text color */
   --text-color-h: 238;
   --text-color-s: 71%;
   --text-color-l: 11%;
@@ -62,7 +62,7 @@
   --text-color-light: hsl(var(--text-color-h), var(--text-color-s), calc(var(--text-color-l) / .9));
   --text-color-dark: hsl(var(--text-color-h), var(--text-color-s), calc(var(--text-color-l) * .9));
 
-	/* Color - link color */
+  /* Color - link color */
   --link-color-h: 211;
   --link-color-s: 100%;
   --link-color-l: 50%;
@@ -85,7 +85,7 @@
   --link-color-light: hsl(var(--link-color-h), var(--link-color-s), calc(var(--link-color-l) / .9));
   --link-color-dark: hsl(var(--link-color-h), var(--link-color-s), calc(var(--link-color-l) * .9));
 
-	/* Color - background color */
+  /* Color - background color */
   --bg-color-h: 0;
   --bg-color-s: 0%;
   --bg-color-l: 100%;
@@ -108,7 +108,7 @@
   --bg-color-light: hsl(var(--bg-color-h), var(--bg-color-s), calc(var(--bg-color-l) / .9));
   --bg-color-dark: hsl(var(--bg-color-h), var(--bg-color-s), calc(var(--bg-color-l) * .9));
 
-	/* Color - code color, an inverted demo from link-color */
+  /* Color - code color, an inverted demo from link-color */
   --code-color-h: calc(var(--link-color-h) + 180);
   --code-color-s: var(--link-color-s);
   --code-color-l: var(--link-color-l);
