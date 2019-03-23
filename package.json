@@ -1,0 +1,22 @@
+{
+  "name": "root-variables",
+  "version": "1.0.0",
+  "description": "Future-proof native CSS variables in your :root",
+  "main": "root-variables.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://sparanoid@github.com/sparanoid/root-variables.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "Tunghsiao Liu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sparanoid/root-variables/issues"
+  },
+  "homepage": "https://github.com/sparanoid/root-variables#readme"
+}
