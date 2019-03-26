@@ -94,7 +94,7 @@ button:active {
   background-color: var(--btn-bg-dark);
 }
 
-button:active:focus {
+button:focus {
   box-shadow: 0 0 0 .15em var(--btn-bg-border);
 }
 
