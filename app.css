@@ -25,6 +25,10 @@ h3 {
   margin: 2em 0 .4em;
 }
 
+p {
+  margin-bottom: 1em;
+}
+
 pre,
 code {
   font-family: var(--fontstack-monospace);
@@ -48,6 +52,7 @@ code {
 
 a {
   color: var(--link-color);
+  font-weight: bold;
 }
 
 a:hover {
