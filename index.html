@@ -28,6 +28,13 @@
   Future-proof native CSS variables (CSS Custom Properties) in <code>:root</code>. View documentation at <a href="https://github.com/sparanoid/root-variables" ref="noopener noreferrer">GitHub</a>. You can also inspect elements in your web browser or view page source to see how it works.
 </p>
 
+<ul>
+  <li>Minimal variables defined: colors, typography, and layout helpers.</li>
+  <li>HSL colors: all colors are HSL-based for simpler manipulation (before we have <a href="https://drafts.csswg.org/css-color/">CSS Color Module Level 4</a> in hands).</li>
+  <li>Easy to migrate: no *magic* variables for flex, or grid layout. You can continue use your existing layout system.</li>
+  <li>Flexible to extend: all variables can be overridden later in <code>:root</code> or in specific scopes.</li>
+</ul>
+
 <h2>
   Color Demos
 </h2>
@@ -111,7 +118,7 @@
   Buttons Demos (based on Root Variables)
 </h2>
 
-<p>Bootstrap-like buttons. All color schemes are tweaked dynamically based on primary color provided by Root Variables. At the moment, CSS doesn't support "nesting" varaible override, so you have to define all variables you need to use in that scope.</p>
+<p>Bootstrap-like buttons. All color schemes are tweaked dynamically based on primary color provided by Root Variables. At the moment, CSS doesn’t support “nesting” varaible override, so you have to define all variables you need to use in that scope.</p>
 
 <button class="primary">Primary</button>
 <button class="secondary">Secondary</button>
@@ -123,3 +130,9 @@
 <button class="dark">Dark</button>
 <button class="link">Link</button>
 <button class="invert">Invert</button>
+
+<h2>
+  License
+</h2>
+
+<p>MIT</p>
