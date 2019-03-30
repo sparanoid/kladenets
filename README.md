@@ -36,7 +36,7 @@ npm i -S root-variables
 
 ## Usage
 
-See `app.js` for example.
+See `app.css` for example.
 
 ## License
 
