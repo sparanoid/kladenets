@@ -4,7 +4,7 @@
     Typography
   ----------------------------------------------------------------------------*/
   --fontstack-prefix: -apple-system, BlinkMacSystemFont,;
-  --fontstack-sans-serif: "Helvetica Neue", sans-serif;
+  --fontstack-sans-serif: "Helvetica Neue", "Segoe UI", sans-serif;
   --fontstack-serif: Georgia, serif;
   --fontstack-monospace: Menlo, Consolas, monospace;
   --fontstack-default: var(--fontstack-prefix) var(--fontstack-sans-serif);
