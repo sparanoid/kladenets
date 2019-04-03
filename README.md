@@ -9,13 +9,13 @@ Future-proof native CSS variables (CSS Custom Properties) in `:root` designed wi
 
 ## Installation
 
-## unpkg
+### unpkg
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/root-variables">
 ```
 
-## jsDelivr
+### jsDelivr
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/root-variables/root-variables.css">
@@ -23,7 +23,7 @@ Future-proof native CSS variables (CSS Custom Properties) in `:root` designed wi
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sparanoid/root-variables/root-variables.css">
 ```
 
-## Yarn
+### Yarn
 
 ```shell
 yarn add root-variables
