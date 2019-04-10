@@ -132,7 +132,7 @@
   --code-color-dark: hsl(var(--code-color-h), var(--code-color-s), calc(var(--code-color-l) * .9));
 
   /*
-    Color variants/variable mappings (based on our mine color scheme)
+    Color variants/variable mappings (based on our main color scheme)
   ----------------------------------------------------------------------------*/
   --border-color: var(--text-color-10);
 }
