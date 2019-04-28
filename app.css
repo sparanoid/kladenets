@@ -84,6 +84,7 @@ button {
   border: none;
   padding: .5em 1em;
   margin-bottom: 1em;
+  font-family: inherit;
   font-size: 100%;
   font-weight: bold;
   cursor: pointer;
