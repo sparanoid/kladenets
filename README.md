@@ -37,7 +37,15 @@ npm i -S root-variables
 
 ## Usage
 
+### Direct CSS
+
 See `app.css` for example.
+
+### Import to JavaScript
+
+```js
+import 'root-variables'
+```
 
 ## License
 
