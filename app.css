@@ -105,18 +105,17 @@ button:focus {
 }
 
 button.secondary {
-  --btn-bg-s: 10%;
-  --btn-bg-l: 60%;
+  --btn-bg-s: calc(var(--link-color-s) * .2);
 }
 
 button.success {
-  --btn-bg-h: 140;
-  --btn-bg-s: 80%;
-  --btn-bg-l: 40%;
+  --btn-bg-h: 150;
+  --btn-bg-s: 100%;
+  --btn-bg-l: 42%;
 }
 
 button.danger {
-  --btn-bg-h: 347;
+  --btn-bg-h: 340;
   --btn-bg-factor: .85;
 }
 
@@ -131,22 +130,23 @@ button.info {
 }
 
 button.light {
-  --btn-bg-s: 20%;
-  --btn-bg-l: 95%;
+  --btn-bg-s: 30%;
+  --btn-bg-l: calc(var(--bg-color-l) * .9);
   --btn-bg-factor: .98;
   --btn-text: var(--text-color);
 }
 
 button.dark {
+  --btn-bg-s: 30%;
   --btn-bg-h: var(--text-color-h);
-  --btn-bg-l: 5%;
-  --btn-bg-factor: .5;
+  --btn-bg-l: calc(var(--text-color-l) * 2);
+  --btn-bg-factor: .65;
 }
 
 button.link {
   --btn-bg-h: var(--link-color-h);
   --btn-bg-s: var(--link-color-s);
-  --btn-bg-l: 100%;
+  --btn-bg-l: var(--bg-color-h);
   --btn-bg-factor: .96;
   --btn-text: var(--link-color);
 }
@@ -159,4 +159,37 @@ button.link:hover {
 button.invert {
   /* just invert link color */
   --btn-bg-h: calc(var(--link-color-h) + 180);
+}
+
+/* Dark mode, that's all we need */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color-h: 233;
+    --text-color-l: 70%;
+    --text-color-s: 40%;
+
+    --link-color-h: 180;
+    --link-color-l: 50%;
+    --link-color-s: 100%;
+
+    --bg-color-h: 220;
+    --bg-color-l: 9%;
+    --bg-color-s: 10%;
+
+    --code-color-h: 300;
+    --code-color-l: calc(var(--link-color-l) * 1.4);
+  }
+
+  a {
+    text-shadow: var(--link-color-60) 0px 0px 10px, var(--link-color-20) 0px 0px 20px;
+  }
+
+  pre,
+  code {
+    text-shadow: var(--code-color-70) 0px 0px 10px, var(--code-color-20) 0px 0px 20px;
+  }
+
+  button.warning {
+    --btn-text: var(--bg-color);
+  }
 }
