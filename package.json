@@ -4,7 +4,13 @@
   "description": "Future-proof native CSS variables in your :root",
   "main": "root-variables.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "release-it"
+  },
+  "release-it": {
+    "github": {
+      "release": true
+    }
   },
   "repository": {
     "type": "git",
@@ -18,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/sparanoid/root-variables/issues"
   },
-  "homepage": "https://github.com/sparanoid/root-variables#readme"
+  "homepage": "https://github.com/sparanoid/root-variables#readme",
+  "devDependencies": {
+    "release-it": "^13.6.5"
+  }
 }
