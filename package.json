@@ -12,6 +12,9 @@
       "release": true
     }
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://sparanoid@github.com/sparanoid/root-variables.git"
