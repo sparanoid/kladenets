@@ -11,7 +11,7 @@
   --font-size-base: 1rem;
   --font-size-factor: 1vw;
   --font-size: calc(var(--font-size-base) + var(--font-size-factor));
-  --font-features: "halt","cv01","cv02","cv03";
+  --font-features: "halt", "cv01", "cv02", "cv03";
   --line-height: calc(20 / 14);
 
   /*
