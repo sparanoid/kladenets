@@ -4,14 +4,14 @@
     Typography
   ----------------------------------------------------------------------------*/
   --fontstack-prefix: -apple-system, BlinkMacSystemFont,;
-  --fontstack-sans-serif: "Helvetica Neue", "Segoe UI", sans-serif;
+  --fontstack-sans-serif: "Helvetica Neue", Arial, sans-serif;
   --fontstack-serif: Georgia, serif;
   --fontstack-monospace: Menlo, Consolas, monospace;
   --fontstack-default: var(--fontstack-prefix) var(--fontstack-sans-serif);
   --font-size-base: 1rem;
   --font-size-factor: 1vw;
   --font-size: calc(var(--font-size-base) + var(--font-size-factor));
-  --font-features: "halt", "ss01", "ss02";
+  --font-features: "halt","cv01","cv02","cv03";
   --line-height: calc(20 / 14);
 
   /*
