@@ -1553,7 +1553,7 @@ registry-url@^5.0.0:
   dependencies:
     rc "^1.2.8"
 
-release-it@^13.6.5:
+release-it@13.6.5:
   version "13.6.5"
   resolved "https://registry.yarnpkg.com/release-it/-/release-it-13.6.5.tgz#79f291ee6d168a794ce251ec880de5e3459c889d"
   integrity sha512-m4JcHmwcOTnOfBv2t1jgZ1ddqk9O71/9YZ7T5vClldez8EL+lCtMpBirNJZJwFj39xRAozLya2o0CrI0diyjEg==
