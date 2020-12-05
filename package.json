@@ -29,6 +29,6 @@
   },
   "homepage": "https://github.com/sparanoid/root-variables#readme",
   "devDependencies": {
-    "release-it": "^13.6.5"
+    "release-it": "13.6.5"
   }
 }
