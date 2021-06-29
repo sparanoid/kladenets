@@ -51,6 +51,7 @@
   --text-color-5: hsla(var(--text-color-hsl), .05);
   --text-color-7: hsla(var(--text-color-hsl), .07);
   --text-color-10: hsla(var(--text-color-hsl), .1);
+  --text-color-15: hsla(var(--text-color-hsl), .15);
   --text-color-20: hsla(var(--text-color-hsl), .2);
   --text-color-30: hsla(var(--text-color-hsl), .3);
   --text-color-40: hsla(var(--text-color-hsl), .4);
@@ -74,6 +75,7 @@
   --link-color-5: hsla(var(--link-color-hsl), .05);
   --link-color-7: hsla(var(--link-color-hsl), .07);
   --link-color-10: hsla(var(--link-color-hsl), .1);
+  --link-color-15: hsla(var(--link-color-hsl), .15);
   --link-color-20: hsla(var(--link-color-hsl), .2);
   --link-color-30: hsla(var(--link-color-hsl), .3);
   --link-color-40: hsla(var(--link-color-hsl), .4);
@@ -97,6 +99,7 @@
   --bg-color-5: hsla(var(--bg-color-hsl), .05);
   --bg-color-7: hsla(var(--bg-color-hsl), .07);
   --bg-color-10: hsla(var(--bg-color-hsl), .1);
+  --bg-color-15: hsla(var(--bg-color-hsl), .15);
   --bg-color-20: hsla(var(--bg-color-hsl), .2);
   --bg-color-30: hsla(var(--bg-color-hsl), .3);
   --bg-color-40: hsla(var(--bg-color-hsl), .4);
@@ -120,6 +123,7 @@
   --code-color-5: hsla(var(--code-color-hsl), .05);
   --code-color-7: hsla(var(--code-color-hsl), .07);
   --code-color-10: hsla(var(--code-color-hsl), .1);
+  --code-color-15: hsla(var(--code-color-hsl), .15);
   --code-color-20: hsla(var(--code-color-hsl), .2);
   --code-color-30: hsla(var(--code-color-hsl), .3);
   --code-color-40: hsla(var(--code-color-hsl), .4);
