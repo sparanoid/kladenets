@@ -42,10 +42,25 @@ npm i -S root-variables
 
 See `app.css` for example.
 
-### Import to JavaScript
+### Import `node_modules` in Webpack
+
+```css
+@import '~root-variables';
+
+body {
+  color: var(--text-color);
+}
+```
+
+### Import in JavaScript
 
 ```js
 import 'root-variables'
+
+// styled-components example
+const Component = styled.div`
+  color: var(--text-color);
+`
 ```
 
 ## License
