@@ -1,6 +1,6 @@
 {
   "name": "root-variables",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Future-proof native CSS variables in your :root",
   "main": "root-variables.css",
   "scripts": {
