@@ -165,6 +165,17 @@ button.invert {
 /* Dark mode, that's all we need */
 @media (prefers-color-scheme: dark) {
   :root {
+    --blue-l: 70%;
+    --indigo-l: 71%;
+    --purple-l: 80%;
+    --pink-l: 83%;
+    --red-l: 75%;
+    --orange-l: 74%;
+    --yellow-l: 80%;
+    --green-l: 60%;
+    --teal-l: 75%;
+    --cyan-l: 80%;
+
     --text-color-h: 233;
     --text-color-s: 40%;
     --text-color-l: 70%;
