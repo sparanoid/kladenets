@@ -166,16 +166,16 @@ button.invert {
 @media (prefers-color-scheme: dark) {
   :root {
     --text-color-h: 233;
-    --text-color-l: 70%;
     --text-color-s: 40%;
+    --text-color-l: 70%;
 
     --link-color-h: 180;
-    --link-color-l: 50%;
     --link-color-s: 100%;
+    --link-color-l: 60%;
 
     --bg-color-h: 220;
-    --bg-color-l: 9%;
     --bg-color-s: 10%;
+    --bg-color-l: 9%;
 
     --code-color-h: 300;
     --code-color-l: calc(var(--link-color-l) * 1.4);
