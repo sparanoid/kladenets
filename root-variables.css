@@ -39,7 +39,7 @@
     Colors
   ----------------------------------------------------------------------------*/
 
-  /* Color - Blue */
+  /* Color - blue */
   --blue-h: 211;
   --blue-s: 100%;
   --blue-l: 50%;
@@ -63,7 +63,7 @@
   --blue-light: hsl(var(--blue-h), var(--blue-s), calc(var(--blue-l) / .9));
   --blue-dark: hsl(var(--blue-h), var(--blue-s), calc(var(--blue-l) * .9));
 
-  /* Color - Indigo */
+  /* Color - indigo */
   --indigo-h: 263;
   --indigo-s: 90%;
   --indigo-l: 51%;
@@ -86,7 +86,7 @@
   --indigo-light: hsl(var(--indigo-h), var(--indigo-s), calc(var(--indigo-l) / .9));
   --indigo-dark: hsl(var(--indigo-h), var(--indigo-s), calc(var(--indigo-l) * .9));
 
-  /* Color - Purple */
+  /* Color - purple */
   --purple-h: 271;
   --purple-s: 70%;
   --purple-l: 60%;
@@ -109,7 +109,7 @@
   --purple-light: hsl(var(--purple-h), var(--purple-s), calc(var(--purple-l) / .9));
   --purple-dark: hsl(var(--purple-h), var(--purple-s), calc(var(--purple-l) * .9));
 
-  /* Color - Pink */
+  /* Color - pink */
   --pink-h: 330;
   --pink-s: 70%;
   --pink-l: 63%;
@@ -132,7 +132,7 @@
   --pink-light: hsl(var(--pink-h), var(--pink-s), calc(var(--pink-l) / .9));
   --pink-dark: hsl(var(--pink-h), var(--pink-s), calc(var(--pink-l) * .9));
 
-  /* Color - Red */
+  /* Color - red */
   --red-h: 349;
   --red-s: 83%;
   --red-l: 55%;
@@ -155,7 +155,7 @@
   --red-light: hsl(var(--red-h), var(--red-s), calc(var(--red-l) / .9));
   --red-dark: hsl(var(--red-h), var(--red-s), calc(var(--red-l) * .9));
 
-  /* Color - Orange */
+  /* Color - orange */
   --orange-h: 27;
   --orange-s: 98%;
   --orange-l: 54%;
@@ -178,7 +178,7 @@
   --orange-light: hsl(var(--orange-h), var(--orange-s), calc(var(--orange-l) / .9));
   --orange-dark: hsl(var(--orange-h), var(--orange-s), calc(var(--orange-l) * .9));
 
-  /* Color - Yellow */
+  /* Color - yellow */
   --yellow-h: 50;
   --yellow-s: 100%;
   --yellow-l: 60%;
@@ -201,8 +201,8 @@
   --yellow-light: hsl(var(--yellow-h), var(--yellow-s), calc(var(--yellow-l) / .9));
   --yellow-dark: hsl(var(--yellow-h), var(--yellow-s), calc(var(--yellow-l) * .9));
 
-  /* Color - Green */
-  --green-h: 120;
+  /* Color - green */
+  --green-h: 145;
   --green-s: 60%;
   --green-l: 60%;
   --green-hsl: var(--green-h), var(--green-s), var(--green-l);
@@ -224,8 +224,8 @@
   --green-light: hsl(var(--green-h), var(--green-s), calc(var(--green-l) / .9));
   --green-dark: hsl(var(--green-h), var(--green-s), calc(var(--green-l) * .9));
 
-  /* Color - Teal */
-  --teal-h: 165;
+  /* Color - teal */
+  --teal-h: 170;
   --teal-s: 70%;
   --teal-l: 55%;
   --teal-hsl: var(--teal-h), var(--teal-s), var(--teal-l);
@@ -247,7 +247,7 @@
   --teal-light: hsl(var(--teal-h), var(--teal-s), calc(var(--teal-l) / .9));
   --teal-dark: hsl(var(--teal-h), var(--teal-s), calc(var(--teal-l) * .9));
 
-  /* Color - Cyan */
+  /* Color - cyan */
   --cyan-h: 180;
   --cyan-s: 80%;
   --cyan-l: 60%;
