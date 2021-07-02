@@ -179,7 +179,7 @@
   --orange-dark: hsl(var(--orange-h), var(--orange-s), calc(var(--orange-l) * .9));
 
   /* Color - Yellow */
-  --yellow-h: 45;
+  --yellow-h: 50;
   --yellow-s: 100%;
   --yellow-l: 60%;
   --yellow-hsl: var(--yellow-h), var(--yellow-s), var(--yellow-l);
