@@ -61,7 +61,7 @@ a:hover {
 
 /*
   Demostrate how to define a set of different color schemes for buttons based
-  on Root Variables
+  on Kladenets
 */
 button {
   --btn-bg-h: var(--link-color-h);

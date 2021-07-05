@@ -1,8 +1,8 @@
 {
-  "name": "root-variables",
+  "name": "kladenets",
   "version": "1.1.2",
   "description": "Future-proof native CSS variables in your :root",
-  "main": "root-variables.css",
+  "main": "kladenets.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "release-it"
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://sparanoid@github.com/sparanoid/root-variables.git"
+    "url": "git+https://sparanoid@github.com/sparanoid/kladenets.git"
   },
   "keywords": [
     "css"
@@ -25,9 +25,9 @@
   "author": "Tunghsiao Liu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sparanoid/root-variables/issues"
+    "url": "https://github.com/sparanoid/kladenets/issues"
   },
-  "homepage": "https://github.com/sparanoid/root-variables#readme",
+  "homepage": "https://github.com/sparanoid/kladenets#readme",
   "devDependencies": {
     "release-it": "13.6.5"
   }
