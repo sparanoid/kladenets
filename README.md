@@ -1,4 +1,4 @@
-# Root Variables
+# Kladenets (aka. Root Variables)
 
 Minimal, future-proof native CSS variables (CSS Custom Properties) framework in `:root` designed with the following features:
 
@@ -13,27 +13,27 @@ Minimal, future-proof native CSS variables (CSS Custom Properties) framework in 
 ### unpkg
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/root-variables">
+<link rel="stylesheet" href="https://unpkg.com/kladenets">
 ```
 
 ### jsDelivr
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/root-variables/root-variables.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/kladenets/kladenets.css">
 <!-- OR latest on GitHub -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sparanoid/root-variables/root-variables.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sparanoid/kladenets/kladenets.css">
 ```
 
 ### Yarn
 
 ```shell
-yarn add root-variables
+yarn add kladenets
 ```
 
 ### npm
 
 ```shell
-npm i -S root-variables
+npm i -S kladenets
 ```
 
 ## Usage
@@ -45,7 +45,7 @@ See `app.css` for example.
 ### Import `node_modules` in Webpack
 
 ```css
-@import '~root-variables';
+@import '~kladenets';
 
 body {
   color: var(--text-color);
@@ -55,7 +55,7 @@ body {
 ### Import in JavaScript
 
 ```js
-import 'root-variables'
+import 'kladenets'
 
 // styled-components example
 const Component = styled.div`
