@@ -276,9 +276,6 @@ $color-set-arr:
     @include generate-color-vars($k, map.get(map.get($kladenets, "color-set"), $k));
   }
 
-  // --blue-light: hsl(var(--blue-h), var(--blue-s), calc(var(--blue-l) / .9));
-  // --blue-dark: hsl(var(--blue-h), var(--blue-s), calc(var(--blue-l) * .9));
-
   /*
     Color variants/variable mappings (based on our main color scheme)
   ----------------------------------------------------------------------------*/
