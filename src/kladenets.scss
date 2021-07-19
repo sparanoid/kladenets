@@ -186,39 +186,41 @@ $color-set-arr:
 ;
 
 // Utilities
-@mixin generate-namespaced-vars($namespace, $object) {
+@mixin generate-namespaced-vars($name, $object) {
   @each $k, $v in $object {
-    --#{$namespace}-#{$k}: #{$v};
+    --#{$name}-#{$k}: #{$v};
   }
 }
 
-@mixin generate-color-vars($namespace, $object) {
-  /* Color - #{$namespace} */
-  @include generate-namespaced-vars($namespace, $object);
+@mixin generate-color-vars($name, $object) {
+  /* Color - #{$name} */
+  @include generate-namespaced-vars($name, $object);
 
-  --#{$namespace}-hsl: var(--#{$namespace}-h), var(--#{$namespace}-s), var(--#{$namespace}-l);
-  --#{$namespace}: hsl(var(--#{$namespace}-hsl));
+  --#{$name}-hsl: var(--#{$name}-h), var(--#{$name}-s), var(--#{$name}-l);
+  --#{$name}: hsl(var(--#{$name}-hsl));
 
   // TODO: space-separated level 4 specs seems doesn't work well with variables on HSLA
   @each $k, $v in map.get($kladenets, "color-alpha-iterator") {
-    --#{$namespace}-a#{$k}: hsla(var(--#{$namespace}-hsl), #{$v});
+    --#{$name}-a#{$k}: hsla(var(--#{$name}-hsl), #{$v});
   }
 
-  // NOTE: --namespace-$k is for backward compatibility, use --namespace-a$k instead
+  // NOTE: --name-$k is for backward compatibility, use --name-a$k instead
   @each $k, $v in map.get($kladenets, "color-alpha-iterator") {
-    --#{$namespace}-#{$k}: var(--#{$namespace}-a#{$k});
+    @if $name == "text-color" or $name == "link-color" or $name == "bg-color" or $name == "code-color" {
+      --#{$name}-#{$k}: var(--#{$name}-a#{$k});
+    }
   }
 
   @each $k, $v in map.get($kladenets, "color-saturation-iterator") {
-    --#{$namespace}-s#{$k}: hsl(var(--#{$namespace}-h) #{$v} var(--#{$namespace}-l));
+    --#{$name}-s#{$k}: hsl(var(--#{$name}-h) #{$v} var(--#{$name}-l));
   }
 
   @each $k, $v in map.get($kladenets, "color-lightness-iterator") {
-    --#{$namespace}-l#{$k}: hsl(var(--#{$namespace}-h) var(--#{$namespace}-s) #{$v});
+    --#{$name}-l#{$k}: hsl(var(--#{$name}-h) var(--#{$name}-s) #{$v});
   }
 
   @each $k, $v in map.get($kladenets, "color-lightness-pretty-iterator") {
-    --#{$namespace}-#{$k}: var(--#{$namespace}-l-#{$v});
+    --#{$name}-#{$k}: var(--#{$name}-l-#{$v});
   }
 }
 
