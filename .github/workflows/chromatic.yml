@@ -9,6 +9,7 @@ on:
       - src/**
   push:
     paths:
+      - package.json
       - src/**
 
 jobs:
