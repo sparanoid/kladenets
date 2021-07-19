@@ -1,0 +1,33 @@
+body {
+  --font-size: 16px;
+
+  color: var(--text-color);
+  font-family: var(--fontstack-prefix) var(--fontstack-sans-serif);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  padding: var(--space-xs);
+  background: var(--bg-color);
+  font-feature-settings: var(--font-features);
+  text-size-adjust: none;
+  text-rendering: optimizelegibility;
+  image-rendering: optimizequality;
+  -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+  margin-top: 1rem;
+}
+
+pre,
+code {
+  font-family: var(--fontstack-monospace);
+  color: var(--code-color);
+}
+
+.grid {
+  display: grid;
+}
+
+.grid > div {
+  padding: 1rem;
+}
