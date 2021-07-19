@@ -1,5 +1,9 @@
 # Kladenets (aka. Root Variables)
 
+[![Test & Build](https://github.com/sparanoid/kladenets/actions/workflows/test.yml/badge.svg)](https://github.com/sparanoid/kladenets/actions/workflows/test.yml)
+[![Chromatic visual testing](https://shields.io/badge/visual_testing-chromatic-orange?logo=chromatic&style=flat)](https://chromatic.com/library?appId=60f5c0ae4a7e3f003ba05641&branch=master)
+[![Online Storybook](https://shields.io/badge/storybook-branch:_master-ff4785?logo=storybook&style=flat)](https://master--60f5c0ae4a7e3f003ba05641.chromatic.com)
+
 Minimal, future-proof native CSS variables (CSS Custom Properties) framework in `:root` designed with the following features:
 
 - Minimal variables defined: colors, typography, and layout helpers.
