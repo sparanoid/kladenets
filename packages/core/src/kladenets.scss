@@ -267,10 +267,6 @@ $color-set-arr:
   ) !default;
   @include generate-namespaced-vars(border, $kld-border);
 
-  /* Nav */
-  --nav-padding: 1.4vmax;
-  --nav-item-space: 1vmax;
-
   /*
     Colors
   ----------------------------------------------------------------------------*/
