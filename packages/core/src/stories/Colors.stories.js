@@ -50,26 +50,6 @@ const Template = ({ colorScheme, ...args }) => {
   return generateDom(colorScheme);
 };
 
-export const TextColor = Template.bind({});
-TextColor.args = {
-  colorScheme: 'text-color',
-};
-
-export const LinkColor = Template.bind({});
-LinkColor.args = {
-  colorScheme: 'link-color',
-};
-
-export const BackgroundColor = Template.bind({});
-BackgroundColor.args = {
-  colorScheme: 'bg-color',
-};
-
-export const CodeColor = Template.bind({});
-CodeColor.args = {
-  colorScheme: 'code-color',
-};
-
 export const Blue = Template.bind({});
 Blue.args = {
   colorScheme: 'blue',
@@ -100,9 +80,19 @@ Orange.args = {
   colorScheme: 'orange',
 };
 
+export const Gold = Template.bind({});
+Gold.args = {
+  colorScheme: 'gold',
+};
+
 export const Yellow = Template.bind({});
 Yellow.args = {
   colorScheme: 'yellow',
+};
+
+export const Lime = Template.bind({});
+Lime.args = {
+  colorScheme: 'lime',
 };
 
 export const Green = Template.bind({});
@@ -118,4 +108,34 @@ Teal.args = {
 export const Cyan = Template.bind({});
 Cyan.args = {
   colorScheme: 'cyan',
+};
+
+export const Black = Template.bind({});
+Black.args = {
+  colorScheme: 'black',
+};
+
+export const White = Template.bind({});
+White.args = {
+  colorScheme: 'white',
+};
+
+export const TextColor = Template.bind({});
+TextColor.args = {
+  colorScheme: 'text-color',
+};
+
+export const LinkColor = Template.bind({});
+LinkColor.args = {
+  colorScheme: 'link-color',
+};
+
+export const BackgroundColor = Template.bind({});
+BackgroundColor.args = {
+  colorScheme: 'bg-color',
+};
+
+export const CodeColor = Template.bind({});
+CodeColor.args = {
+  colorScheme: 'code-color',
 };

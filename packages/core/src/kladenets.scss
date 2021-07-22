@@ -51,9 +51,9 @@ $kladenets: map.merge(
         l: "50%",
       ),
       "indigo": (
-        h: "263",
+        h: "250",
         s: "90%",
-        l: "51%",
+        l: "54%",
       ),
       "purple": (
         h: "271",
@@ -75,15 +75,25 @@ $kladenets: map.merge(
         s: "98%",
         l: "54%",
       ),
+      "gold": (
+        h: "40",
+        s: "100%",
+        l: "56%",
+      ),
       "yellow": (
         h: "50",
         s: "100%",
         l: "60%",
       ),
+      "lime": (
+        h: "85",
+        s: "80%",
+        l: "44%",
+      ),
       "green": (
         h: "145",
-        s: "60%",
-        l: "60%",
+        s: "72%",
+        l: "46%",
       ),
       "teal": (
         h: "170",
@@ -95,10 +105,20 @@ $kladenets: map.merge(
         s: "80%",
         l: "60%",
       ),
-      "text-color": (
+      "black": (
         h: "238",
         s: "71%",
         l: "11%",
+      ),
+      "white": (
+        h: "0",
+        s: "0%",
+        l: "100%",
+      ),
+      "text-color": (
+        h: var(--black-h),
+        s: var(--black-s),
+        l: var(--black-l),
       ),
       "link-color": (
         h: var(--blue-h),
@@ -106,9 +126,9 @@ $kladenets: map.merge(
         l: var(--blue-l),
       ),
       "bg-color": (
-        h: "0",
-        s: "0%",
-        l: "100%",
+        h: var(--white-h),
+        s: var(--white-s),
+        l: var(--white-l),
       ),
       "code-color": (
         h: calc(var(--link-color-h) + 180),
@@ -194,10 +214,13 @@ $color-set-arr:
   "pink",
   "red",
   "orange",
+  "gold",
   "yellow",
   "green",
   "teal",
   "cyan",
+  "black",
+  "white",
   "text-color",
   "link-color",
   "bg-color",
