@@ -1,0 +1,141 @@
+import { Meta, Canvas } from '@storybook/addon-docs';
+
+import '../../dist/kladenets.css';
+import './storybook.css';
+
+<Meta title="Kladenets/Layout" />
+
+<style>{`
+  .block {
+    background-color: var(--text-color-10);
+    padding: 1rem;
+  }
+`}</style>
+
+# Layout
+
+## Breakpoints
+
+<Canvas>
+<p style={{
+  maxWidth: 'var(--breakpoint-xs)',
+  backgroundColor: 'var(--text-color-10)',
+}}>
+  --breakpoint-xs
+</p>
+</Canvas>
+
+<Canvas>
+<p style={{
+  maxWidth: 'var(--breakpoint-ms)',
+  backgroundColor: 'var(--text-color-10)',
+}}>
+  --breakpoint-ms
+</p>
+</Canvas>
+
+<Canvas>
+<p style={{
+  maxWidth: 'var(--breakpoint-md)',
+  backgroundColor: 'var(--text-color-10)',
+}}>
+  --breakpoint-md
+</p>
+</Canvas>
+
+<Canvas>
+<p style={{
+  maxWidth: 'var(--breakpoint-lg)',
+  backgroundColor: 'var(--text-color-10)',
+}}>
+  --breakpoint-lg
+</p>
+</Canvas>
+
+## Space
+
+<Canvas>
+<div style={{
+  display: 'flex',
+  gap: 'var(--space-xs)',
+}}>
+  <div className="block">--space-xs</div>
+  <div className="block">--space-xs</div>
+</div>
+</Canvas>
+
+<Canvas>
+<div style={{
+  display: 'flex',
+  gap: 'var(--space-sm)',
+}}>
+  <div className="block">--space-sm</div>
+  <div className="block">--space-sm</div>
+</div>
+</Canvas>
+
+<Canvas>
+<div style={{
+  display: 'flex',
+  gap: 'var(--space-md)',
+}}>
+  <div className="block">--space-md</div>
+  <div className="block">--space-md</div>
+</div>
+</Canvas>
+
+<Canvas>
+<div style={{
+  display: 'flex',
+  gap: 'var(--space-lg)',
+}}>
+  <div className="block">--space-lg</div>
+  <div className="block">--space-lg</div>
+</div>
+</Canvas>
+
+## border
+
+<Canvas>
+<div
+  className="block"
+  style={{
+    border: 'var(--border-xs) solid var(--text-color-10)',
+  }}
+>
+  --border-xs
+</div>
+</Canvas>
+
+<Canvas>
+<div
+  className="block"
+  style={{
+    border: 'var(--border-sm) solid var(--text-color-10)',
+  }}
+>
+  --border-sm
+</div>
+</Canvas>
+
+<Canvas>
+<div
+  className="block"
+  style={{
+    border: 'var(--border-md) solid var(--text-color-10)',
+  }}
+>
+  --border-md
+</div>
+</Canvas>
+
+<Canvas>
+<div
+  className="block"
+  style={{
+    border: 'var(--border-lg) solid var(--text-color-10)',
+  }}
+>
+  --border-lg
+</div>
+</Canvas>
