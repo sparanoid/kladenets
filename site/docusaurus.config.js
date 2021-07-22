@@ -4,7 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Kladenets Documentation',
-  tagline: 'Future-proof native CSS variables in :root',
+  tagline: 'Minimal, future-proof native CSS variables in :root',
   url: 'https://sparanoid.com',
   baseUrl: '/lab/kladenets/',
   onBrokenLinks: 'throw',
@@ -39,7 +39,7 @@ module.exports = {
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
         {
           title: 'Docs',
