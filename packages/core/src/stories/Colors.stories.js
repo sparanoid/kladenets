@@ -13,7 +13,7 @@ function generateDom(colorScheme) {
 
   dom += `<h2>Alpha Loop</h2><div class="grid grid-color-a">`
   for (const prop in colorAlphaIterator) {
-    dom += `<div style="background-color: var(--${colorScheme}-a${prop})">--${colorScheme}-a${prop}</div>`
+    dom += `<div style="background-color: var(--${colorScheme}-${prop})">--${colorScheme}-${prop}</div>`
   }
   dom += `</div>`
 
