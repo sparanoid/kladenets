@@ -4,6 +4,46 @@
 $kladenets: () !default;
 $kladenets: map.merge(
   (
+    "fontstack": (
+      prefix: "-apple-system, BlinkMacSystemFont,",
+      sans-serif: '"Helvetica Neue", Arial, sans-serif',
+      serif: "Georgia, serif",
+      monospace: "Menlo, Consolas, monospace",
+      default: "var(--fontstack-prefix) var(--fontstack-sans-serif)",
+    ),
+
+    "font": (
+      size-base: "1rem",
+      size-factor: "1vw",
+      size: "calc(var(--font-size-base) + var(--font-size-factor))",
+      features: '"halt", "cv01", "cv02", "cv03"',
+    ),
+
+    "line": (
+      height: "calc(20 / 14)",
+    ),
+
+    "breakpoints": (
+      xs: "400px",
+      sm: "640px",
+      md: "1080px",
+      lg: "1600px",
+    ),
+
+    "space": (
+      xs: "1.2vw",
+      sm: "4vw",
+      md: "8vw",
+      lg: "24vw",
+    ),
+
+    "border": (
+      xs: ".5px",
+      sm: "1px",
+      md: "2px",
+      lg: "4px",
+    ),
+
     "color-set": (
       "blue": (
         h: "211",
@@ -187,8 +227,14 @@ $color-set-arr:
 
 // Utilities
 @mixin generate-namespaced-vars($name, $object) {
-  @each $k, $v in $object {
-    --#{$name}-#{$k}: #{$v};
+  @if $name == "" {
+    @each $k, $v in $object {
+      --#{$k}: #{$v};
+    }
+  } @else {
+    @each $k, $v in $object {
+      --#{$name}-#{$k}: #{$v};
+    }
   }
 }
 
@@ -229,43 +275,16 @@ $color-set-arr:
   /*
     Typography
   ----------------------------------------------------------------------------*/
-  --fontstack-prefix: -apple-system, BlinkMacSystemFont,;
-  --fontstack-sans-serif: "Helvetica Neue", Arial, sans-serif;
-  --fontstack-serif: Georgia, serif;
-  --fontstack-monospace: Menlo, Consolas, monospace;
-  --fontstack-default: var(--fontstack-prefix) var(--fontstack-sans-serif);
-  --font-size-base: 1rem;
-  --font-size-factor: 1vw;
-  --font-size: calc(var(--font-size-base) + var(--font-size-factor));
-  --font-features: "halt", "cv01", "cv02", "cv03";
-  --line-height: calc(20 / 14);
+  @include generate-namespaced-vars(fontstack, map.get($kladenets, "fontstack"));
+  @include generate-namespaced-vars(font, map.get($kladenets, "font"));
+  @include generate-namespaced-vars(line, map.get($kladenets, "line"));
 
   /*
     Layout
   ----------------------------------------------------------------------------*/
-  $kld-breakpoints: (
-    xs: 400px,
-    sm: 640px,
-    md: 1080px,
-    lg: 1600px,
-  ) !default;
-  @include generate-namespaced-vars(breakpoint, $kld-breakpoints);
-
-  $kld-space: (
-    xs: 1.2vw,
-    sm: 4vw,
-    md: 8vw,
-    lg: 24vw,
-  ) !default;
-  @include generate-namespaced-vars(space, $kld-space);
-
-  $kld-border: (
-    xs: .5px,
-    sm: 1px,
-    md: 2px,
-    lg: 4px,
-  ) !default;
-  @include generate-namespaced-vars(border, $kld-border);
+  @include generate-namespaced-vars(breakpoint, map.get($kladenets, "breakpoints"));
+  @include generate-namespaced-vars(space, map.get($kladenets, "space"));
+  @include generate-namespaced-vars(border, map.get($kladenets, "border"));
 
   /*
     Colors
