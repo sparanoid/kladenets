@@ -5,25 +5,282 @@
  * work well for content-centric websites.
  */
 
+@import '~kladenets';
+
+/* kladenets customs */
+:root {
+  --fontstack-sans-serif: "Helvetica Neue", "PingFang SC", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif;
+  --fontstack-serif: Georgia, serif;
+  /* "PingFang", "MS Yahei", "WQY" for monospace is used for Prince PDF generation in docs */
+  --fontstack-monospace: Menlo, Consolas, "PingFang SC", "Microsoft Yahei", "WenQuanYi Micro Hei", monospace;
+  --fontstack-default: var(--fontstack-prefix) var(--fontstack-sans-serif);
+
+  /* darker green color */
+  --green-l: 45%;
+}
+
+html[data-theme="dark"] {
+  /* Colors */
+  --blue-l: 70%;
+  --indigo-l: 71%;
+  --purple-l: 80%;
+  --pink-l: 83%;
+  --red-l: 75%;
+  --orange-l: 74%;
+  --yellow-l: 80%;
+  --green-l: 80%;
+  --teal-l: 75%;
+  --cyan-l: 80%;
+
+  /* Basis */
+  --text-color-h: 213;
+  --text-color-s: 32%;
+  --text-color-l: 70%;
+
+  --link-color-h: 202;
+  --link-color-s: 100%;
+  --link-color-l: 60%;
+
+  --bg-color-h: 220;
+  --bg-color-s: 10%;
+  --bg-color-l: 12%;
+
+  --code-color-s: calc(var(--link-color-s) * .95);
+  --code-color-l: calc(var(--link-color-l) * 1.4);
+}
+
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
-  --ifm-code-font-size: 95%;
+  --ifm-color-primary: var(--link-color);
+
+  --ifm-alert-color: var(--text-color);
+  --ifm-color-secondary: var(--text-color-10);
+  --ifm-color-success: var(--green-15);
+  --ifm-color-info: var(--blue-15);
+  --ifm-color-warning: var(--orange-15);
+  --ifm-color-danger: var(--red-15);
+
+  --ifm-color-gray-100: var(--text-color-10);
+  --ifm-color-gray-200: var(--text-color-20);
+  --ifm-color-gray-300: var(--text-color-30);
+  --ifm-color-gray-400: var(--text-color-40);
+  --ifm-color-gray-500: var(--text-color-50);
+  --ifm-color-gray-600: var(--text-color-60);
+  --ifm-color-gray-700: var(--text-color-70);
+  --ifm-color-gray-800: var(--text-color-80);
+  --ifm-color-gray-900: var(--text-color-90);
+
+  --ifm-code-font-size: 100%;
 }
 
 .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--text-color-10);
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--text-color-10);
+}
+
+/* openbayes custom */
+html,
+html[data-theme="light"],
+html[data-theme="dark"] {
+  /* https://github.com/facebookincubator/infima/blob/master/packages/core/styles/common/dark-mode.pcss */
+  --ifm-background-surface-color: var(--bg-color);
+  --ifm-navbar-link-color: var(--text-color);
+  --ifm-navbar-shadow: 0 1px 2px 0 var(--text-color-10);
+
+  --ifm-blockquote-color: var(--text-color-60);
+
+  --ifm-hover-overlay: var(--link-color-5);
+
+  --ifm-color-content-secondary: var(--text-color-60);
+
+  --ifm-menu-color: var(--text-color);
+
+  --ifm-toc-border-color: var(--text-color-10);
+
+  --ifm-code-background: transparent;
+
+  --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="#000" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
+
+  --ifm-table-border-color: var(--text-color-10);
+  --ifm-table-stripe-background: var(--text-color-5);
+
+  --ifm-scrollbar-track-background-color: transparent;
+  --ifm-scrollbar-thumb-background-color: var(--text-color-5);
+  --ifm-scrollbar-thumb-hover-background-color: var(--text-color-20);
+
+  --ifm-font-family-monospace: var(--fontstack-monospace);
+
+  --ifm-footer-background-color: var(--text-color-5);
+
+  /* This doesn't work at the moment */
+  /* https://github.com/facebook/docusaurus/issues/3678 */
+  /* --docsearch-text-color: var(--text-color);
+  --docsearch-container-background: rgba(9,10,17,0.8);
+  --docsearch-modal-background: #15172a;
+  --docsearch-modal-shadow: inset 1px 1px 0 0 #2c2e40,0 3px 8px 0 #000309;
+  --docsearch-searchbox-background: #090a11;
+  --docsearch-searchbox-focus-background: var(--bg-color);
+  --docsearch-hit-color: #bec3c9;
+  --docsearch-hit-shadow: none;
+  --docsearch-hit-background: #090a11;
+  --docsearch-key-gradient: linear-gradient(-26.5deg,#565872,#31355b);
+  --docsearch-key-shadow: inset 0 -2px 0 0 #282d55,inset 0 0 1px 1px #51577d,0 2px 2px 0 rgba(3,4,9,0.3);
+  --docsearch-footer-background: #1e2136;
+  --docsearch-footer-shadow: inset 0 1px 0 0 rgba(73,76,106,0.5),0 -4px 8px 0 rgba(0,0,0,0.2);
+  --docsearch-logo-color: #fff;
+  --docsearch-muted-color: #7f8497; */
+
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+body {
+  --doc-sidebar-width: 340px;
+  font-family: var(--fontstack-default);
+}
+
+code {
+  color: var(--code-color);
+  border: none;
+  padding: 0;
+  vertical-align: inherit;
+}
+
+/* Admonitions */
+.alert--secondary, .alert--secondary a { color: var(--text-color); }
+.alert--success, .alert--success a { color: var(--green); }
+.alert--info, .alert--info a { color: var(--blue); }
+.alert--warning, .alert--warning a { color: var(--orange); }
+.alert--danger, .alert--danger a { color: var(--red); }
+
+.alert--secondary .admonition-icon svg { fill: var(--text-color); }
+.alert--success .admonition-icon svg { fill: var(--green); }
+.alert--info .admonition-icon svg { fill: var(--blue); }
+.alert--warning .admonition-icon svg { fill: var(--orange); }
+.alert--danger .admonition-icon svg { fill: var(--red); }
+
+/* ToC styles */
+.table-of-contents {
+  font-size: 1rem;
+}
+
+.table-of-contents__link code {
+  color: var(--code-color-60);
+}
+
+.table-of-contents__link:hover code,
+.table-of-contents__link--active code {
+  color: var(--code-color);
+}
+
+/* Sidebar menu on small devices, should push to left or overlayed with Crisp widget */
+.menu--responsive .menu__button {
+  right: auto;
+  left: 1em;
+  backdrop-filter: blur(10px);
+}
+
+/* Algolia search item auto height */
+.DocSearch .DocSearch-Hit-Container {
+  height: auto;
+  padding: .5rem var(--docsearch-spacing) .5rem 0;
+}
+
+.DocSearch .DocSearch-Hit-content-wrapper {
+  white-space: inherit;
+}
+
+/* Modified date styles */
+/* @docusaurus-theme-classic-lib-next-theme-DocItem-styles-module */
+html div[class*="lastUpdated"] {
+  font-style: normal;
+}
+
+/* Lighter code block title border color */
+/* @docusaurus-theme-classic-lib-next-theme-CodeBlock-styles-module */
+html div[class*="codeBlockTitle"] {
+  border-bottom-color: var(--text-color-10);
+}
+
+/* Dark mode toggler */
+html .react-toggle-track {
+  background-color: var(--text-color);
+}
+
+html[data-theme="dark"] .react-toggle-track {
+  background-color: var(--text-color-20);
+}
+
+/* Sublink arrow icon refine */
+.menu__link--sublist::after {
+  align-self: center;
+  mask-image: url("/img/arrow.svg");
+  mask-position: center center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  background: currentColor;
+  filter: none;
+  opacity: .5;
+}
+
+.menu__link--sublist.menu__link--active::after {
+  opacity: 1;
+}
+
+/* Menu list custom padding */
+.menu__list .menu__list {
+  border-left: 1px solid var(--text-color-10);
+  margin-left: calc(var(--ifm-menu-link-padding-horizontal) + 10px);
+}
+
+/* Menu list item custom hover, active style */
+.menu__link:hover,
+.menu__link--active:not(.menu__link--sublist) {
+  color: var(--link-color);
+  background-color: transparent;
+}
+
+/* ToC custom border */
+div[class^="tocCollapsibleContent"] > ul {
+  border-color: var(--link-color-10);
+}
+
+/* Sidebar custom padding */
+div[class^="sidebar"] .menu,
+div[class*="menuWrapper"] > div {
+  padding: 0;
+  padding-bottom: 1rem;
+}
+
+div[class^="sidebar"] .menu[class^="menuWithAnnouncementBar"] {
+  margin-bottom: 0;
+}
+
+div[class^="sidebar"] .menu--show {
+  padding: 0;
+  padding-bottom: 5rem;
+}
+
+/* Custom DocSidebarItem subheading */
+.menu__list-item-content-subheading {
+  font-size: .9rem;
+  opacity: .4;
+}
+
+/* DocSearch appearance */
+body .DocSearch-Button {
+  border-radius: 4px;
+}
+
+/* Post-specific styles */
+.runtimes-table table {
+  overflow: auto;
+  display: block;
+  white-space: nowrap;
 }
