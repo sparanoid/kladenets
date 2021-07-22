@@ -5,12 +5,12 @@ on:
   # Path filters are not evaluated for pushes to tags.
   pull_request:
     paths:
-      - package.json
-      - src/**
+      - packages/core/package.json
+      - packages/core/src/**
   push:
     paths:
-      - package.json
-      - src/**
+      - packages/core/package.json
+      - packages/core/src/**
 
 jobs:
   chromatic-deploy:
