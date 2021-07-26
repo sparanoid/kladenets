@@ -261,7 +261,7 @@ $color-set-arr:
   }
 
   @each $k, $v in map.get($kladenets, "color-lightness-pretty-iterator") {
-    --#{$name}-#{$k}: var(--#{$name}-l-#{$v});
+    --#{$name}-#{$k}: var(--#{$name}-#{$v});
   }
 }
 
