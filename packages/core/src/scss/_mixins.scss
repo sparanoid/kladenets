@@ -1,0 +1,39 @@
+@use "sass:map";
+@use "config" as c;
+
+@mixin scoped-vars($name, $object) {
+  @if $name == "" {
+    @each $k, $v in $object {
+      --#{$k}: #{$v};
+    }
+  } @else {
+    @each $k, $v in $object {
+      --#{$name}-#{$k}: #{$v};
+    }
+  }
+}
+
+@mixin color-vars($name, $object) {
+  /* Color - #{$name} */
+  @include scoped-vars($name, $object);
+
+  --#{$name}-hsl: var(--#{$name}-h), var(--#{$name}-s), var(--#{$name}-l);
+  --#{$name}: hsl(var(--#{$name}-hsl));
+
+  // TODO: space-separated level 4 specs seems doesn't work well with variables on HSLA
+  @each $k, $v in map.get(c.$kladenets, "color-alpha-iterator") {
+    --#{$name}-#{$k}: hsla(var(--#{$name}-hsl), #{$v});
+  }
+
+  @each $k, $v in map.get(c.$kladenets, "color-saturation-iterator") {
+    --#{$name}-s#{$k}: hsl(var(--#{$name}-h) #{$v} var(--#{$name}-l));
+  }
+
+  @each $k, $v in map.get(c.$kladenets, "color-lightness-iterator") {
+    --#{$name}-l#{$k}: hsl(var(--#{$name}-h) var(--#{$name}-s) #{$v});
+  }
+
+  @each $k, $v in map.get(c.$kladenets, "color-lightness-pretty-iterator") {
+    --#{$name}-#{$k}: var(--#{$name}-#{$v});
+  }
+}

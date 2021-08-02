@@ -1,0 +1,26 @@
+@use "sass:map";
+@use "config" as c;
+@use "mixins" as m;
+
+@mixin common-loop {
+  /*
+    Typography
+  ----------------------------------------------------------------------------*/
+  @include m.scoped-vars(fontstack, map.get(c.$kladenets, "fontstack"));
+  @include m.scoped-vars(font, map.get(c.$kladenets, "font"));
+  @include m.scoped-vars(line, map.get(c.$kladenets, "line"));
+
+  /*
+    Layout
+  ----------------------------------------------------------------------------*/
+  @include m.scoped-vars(breakpoint, map.get(c.$kladenets, "breakpoints"));
+  @include m.scoped-vars(space, map.get(c.$kladenets, "space"));
+  @include m.scoped-vars(border, map.get(c.$kladenets, "border"));
+
+  /*
+    Colors
+  ----------------------------------------------------------------------------*/
+  @each $k, $v in map.get(c.$kladenets, "color-set") {
+    @include m.color-vars($k, map.get(map.get(c.$kladenets, "color-set"), $k));
+  }
+}
