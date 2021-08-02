@@ -1110,8 +1110,4 @@
   --code-color-dark: var(--code-color-40);
   --code-color-darker: var(--code-color-20);
   --code-color-darkest: var(--code-color-5);
-  /*
-    Color variants/variable mappings (based on our main color scheme)
-  ----------------------------------------------------------------------------*/
-  --border-color: var(--text-color-10);
 }

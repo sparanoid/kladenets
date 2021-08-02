@@ -1,0 +1,5 @@
+@use "main";
+
+body {
+  @include main.common-loop;
+}
