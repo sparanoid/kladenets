@@ -24,3 +24,12 @@
     @include m.color-vars($k, map.get(map.get(c.$kladenets, "color-set"), $k));
   }
 }
+
+@mixin material-map-loop {
+  /*
+    Material Colors
+  ----------------------------------------------------------------------------*/
+  @each $k, $v in map.get(c.$kladenets, "color-set") {
+    @include m.material-map-vars($k, map.get(map.get(c.$kladenets, "color-set"), $k));
+  }
+}
