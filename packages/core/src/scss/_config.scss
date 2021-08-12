@@ -135,6 +135,16 @@ $kladenets: map.merge(
         s: "0%",
         l: "100%",
       ),
+      "grey": (
+        h: var(--black-h),
+        s: "1%",
+        l: var(--black-l),
+      ),
+      "blue-grey": (
+        h: var(--blue-h),
+        s: "12%",
+        l: var(--blue-l),
+      ),
       "text-color": (
         h: var(--black-h),
         s: var(--black-s),
