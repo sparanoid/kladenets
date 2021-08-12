@@ -37,3 +37,10 @@
     --#{$name}-#{$k}: var(--#{$name}-#{$v});
   }
 }
+
+@mixin material-map-vars($name, $object) {
+  /* Color - #{$name} */
+  @each $k, $v in map.get(c.$kladenets, "color-md-iterator") {
+    --md-#{$name}-#{$k}: hsl(var(--#{$name}-h) calc(var(--#{$name}-s) - .4 * #{$v}) calc(100% - #{$v}));
+  }
+}
