@@ -41,6 +41,6 @@
 @mixin material-map-vars($name, $object) {
   /* Color - #{$name} */
   @each $k, $v in map.get(c.$kladenets, "color-md-iterator") {
-    --md-#{$name}-#{$k}: hsl(var(--#{$name}-h) calc(var(--#{$name}-s) + .1 * #{$v}) calc(100% - #{$v}));
+    --md-#{$name}-#{$k}: hsl(var(--#{$name}-h) calc(var(--#{$name}-s) + .1 * #{$v}) calc(var(--bg-color-l) - #{$v} * var(--theme-scheme-multiplier, 1)));
   }
 }
