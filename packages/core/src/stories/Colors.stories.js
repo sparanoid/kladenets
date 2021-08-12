@@ -2,10 +2,12 @@ import {
   colorAlphaIterator,
   colorSaturationIterator,
   colorLightnessIterator,
+  colorMdIterator,
   colorSet
 } from './KladenetsConfig';
 
 import '../../dist/kladenets.css';
+import '../../dist/kladenets-material-map.css';
 import './storybook.css';
 
 function generateDom(colorScheme) {
@@ -26,6 +28,12 @@ function generateDom(colorScheme) {
   dom += `<h2>Lightness Loop</h2><div class="grid grid-color-l">`
   for (const prop in colorLightnessIterator) {
     dom += `<div style="background-color: var(--${colorScheme}-l${prop})">--${colorScheme}-l${prop}</div>`
+  }
+  dom += `</div>`
+
+  dom += `<h2>Material Colors Loop</h2><div class="grid grid-color-md">`
+  for (const prop in colorMdIterator) {
+    dom += `<div style="background-color: var(--md-${colorScheme}-${prop})">--md-${colorScheme}-${prop}</div>`
   }
   dom += `</div>`
 
@@ -60,6 +68,11 @@ Indigo.args = {
   colorScheme: 'indigo',
 };
 
+export const DeepPurple = Template.bind({});
+DeepPurple.args = {
+  colorScheme: 'deep-purple',
+};
+
 export const Purple = Template.bind({});
 Purple.args = {
   colorScheme: 'purple',
@@ -75,14 +88,19 @@ Red.args = {
   colorScheme: 'red',
 };
 
+export const DeepOrange = Template.bind({});
+DeepOrange.args = {
+  colorScheme: 'deep-orange',
+};
+
 export const Orange = Template.bind({});
 Orange.args = {
   colorScheme: 'orange',
 };
 
-export const Gold = Template.bind({});
-Gold.args = {
-  colorScheme: 'gold',
+export const Amber = Template.bind({});
+Amber.args = {
+  colorScheme: 'amber',
 };
 
 export const Yellow = Template.bind({});
@@ -93,6 +111,11 @@ Yellow.args = {
 export const Lime = Template.bind({});
 Lime.args = {
   colorScheme: 'lime',
+};
+
+export const LightGreen = Template.bind({});
+LightGreen.args = {
+  colorScheme: 'light-green',
 };
 
 export const Green = Template.bind({});
@@ -108,6 +131,11 @@ Teal.args = {
 export const Cyan = Template.bind({});
 Cyan.args = {
   colorScheme: 'cyan',
+};
+
+export const LightBlue = Template.bind({});
+LightBlue.args = {
+  colorScheme: 'light-blue',
 };
 
 export const Black = Template.bind({});
