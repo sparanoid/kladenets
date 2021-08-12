@@ -91,6 +91,8 @@ export const colorSet = [
   "light-blue",
   "black",
   "white",
+  "grey",
+  "blue-grey",
   "text-color",
   "link-color",
   "bg-color",

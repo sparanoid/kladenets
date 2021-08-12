@@ -148,6 +148,16 @@ White.args = {
   colorScheme: 'white',
 };
 
+export const Grey = Template.bind({});
+Grey.args = {
+  colorScheme: 'grey',
+};
+
+export const BlueGrey = Template.bind({});
+BlueGrey.args = {
+  colorScheme: 'blue-grey',
+};
+
 export const TextColor = Template.bind({});
 TextColor.args = {
   colorScheme: 'text-color',
