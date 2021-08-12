@@ -1112,7 +1112,7 @@ html {
   --white-darkest: var(--white-5);
   /* Color - grey */
   --grey-h: var(--black-h);
-  --grey-s: 1%;
+  --grey-s: 6%;
   --grey-l: var(--black-l);
   --grey-hsl: var(--grey-h), var(--grey-s), var(--grey-l);
   --grey: hsl(var(--grey-hsl));
