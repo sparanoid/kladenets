@@ -19,6 +19,10 @@
     "build-storybook": "build-storybook"
   },
   "release-it": {
+    "git": {
+      "commitArgs": "-S",
+      "tagArgs": "-s"
+    },
     "github": {
       "release": true
     }
