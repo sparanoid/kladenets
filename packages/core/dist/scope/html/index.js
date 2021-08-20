@@ -1,1 +1,1 @@
-import '../../scope-html.css';
+import '../html.css';
