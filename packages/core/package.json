@@ -1,6 +1,6 @@
 {
   "name": "kladenets",
-  "version": "2.0.0-10",
+  "version": "2.0.0-11",
   "description": "Future-proof native CSS variables in your :root",
   "author": "Tunghsiao Liu",
   "license": "MIT",
