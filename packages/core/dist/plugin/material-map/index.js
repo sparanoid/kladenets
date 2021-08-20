@@ -1,1 +1,1 @@
-import '../../plugin-material-map.css';
+import '../material-map.css';
