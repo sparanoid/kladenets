@@ -1,0 +1,1 @@
+import '../../scope-body.css';

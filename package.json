@@ -6,20 +6,9 @@
     "packages/*",
     "site"
   ],
-  "main": "dist/kladenets.css",
-  "files": [
-    "dist/**/*.css"
-  ],
   "scripts": {
-    "test": "yarn workspace kladenets test",
-    "build": "yarn workspace kladenets build",
-    "serve": "yarn workspace kladenets serve",
-    "release": "yarn workspace kladenets release",
-    "storybook": "yarn workspace kladenets storybook",
-    "build-storybook": "yarn workspace kladenets build-storybook",
-    "site:build": "yarn workspace kladenets-site build",
-    "site:start": "yarn workspace kladenets-site start",
-    "site:deploy": "yarn workspace kladenets-site deploy"
+    "core": "yarn workspace kladenets",
+    "site": "yarn workspace kladenets-site"
   },
   "release-it": {
     "github": {
