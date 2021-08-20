@@ -4,9 +4,10 @@
   "description": "Future-proof native CSS variables in your :root",
   "author": "Tunghsiao Liu",
   "license": "MIT",
-  "main": "dist/kladenets.css",
+  "main": "dist/base.css",
   "files": [
-    "dist/**/*.css"
+    "dist/**/*.css",
+    "dist/**/*.js"
   ],
   "scripts": {
     "test": "npm-run-all --parallel build",

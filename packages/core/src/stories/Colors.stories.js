@@ -6,8 +6,8 @@ import {
   colorSet
 } from './KladenetsConfig';
 
-import '../../dist/kladenets.css';
-import '../../dist/kladenets-material-map.css';
+import 'kladenets';
+import '../../dist/plugin/material-map';
 import './storybook.css';
 
 function generateDom(colorScheme) {
