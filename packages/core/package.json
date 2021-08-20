@@ -6,8 +6,7 @@
   "license": "MIT",
   "main": "dist/base.css",
   "files": [
-    "dist/**/*.css",
-    "dist/**/*.js"
+    "dist/**/*.css"
   ],
   "scripts": {
     "test": "npm-run-all --parallel build",
