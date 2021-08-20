@@ -1,5 +1,5 @@
-@use "main";
+@use "../main";
 
-html {
+body {
   @include main.common-loop;
 }
