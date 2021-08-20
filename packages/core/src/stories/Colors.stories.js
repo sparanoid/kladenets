@@ -7,7 +7,7 @@ import {
 } from './KladenetsConfig';
 
 import 'kladenets';
-import '../../dist/plugin/material-map';
+import '../../dist/plugin/material-map.css';
 import './storybook.css';
 
 function generateDom(colorScheme) {
