@@ -2,6 +2,7 @@ import {
   colorAlphaIterator,
   colorSaturationIterator,
   colorLightnessIterator,
+  colorLightnessPrettyIterator,
   colorMdIterator,
   colorSet
 } from './KladenetsConfig';
@@ -28,6 +29,12 @@ function generateDom(colorScheme) {
   dom += `<h2>Lightness Loop</h2><div class="grid grid-color-l">`
   for (const prop in colorLightnessIterator) {
     dom += `<div style="background-color: var(--${colorScheme}-l${prop})">--${colorScheme}-l${prop}</div>`
+  }
+  dom += `</div>`
+
+  dom += `<h2>Pretty Lightness Loop</h2><div class="grid grid-color-l">`
+  for (const prop in colorLightnessPrettyIterator) {
+    dom += `<div style="background-color: var(--${colorScheme}-${prop})">--${colorScheme}-${prop}</div>`
   }
   dom += `</div>`
 
