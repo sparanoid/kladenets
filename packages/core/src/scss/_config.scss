@@ -225,12 +225,12 @@ $kladenets: map.merge(
     ),
 
     "color-lightness-pretty-iterator": (
-      lightest: "95",
-      lighter: "80",
-      light: "60",
-      dark: "40",
-      darker: "20",
-      darkest: "5",
+      lightest: "50%",
+      lighter: "30%",
+      light: "10%",
+      dark: "-10%",
+      darker: "-30%",
+      darkest: "-50%",
     ),
 
     "color-md-iterator": (
