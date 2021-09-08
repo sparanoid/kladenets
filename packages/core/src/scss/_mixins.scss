@@ -34,7 +34,7 @@
   }
 
   @each $k, $v in map.get(c.$kladenets, "color-lightness-pretty-iterator") {
-    --#{$name}-#{$k}: var(--#{$name}-l#{$v});
+    --#{$name}-#{$k}: hsl(var(--#{$name}-h) var(--#{$name}-s) calc(var(--#{$name}-l) + #{$v}));
   }
 }
 
