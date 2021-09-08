@@ -55,6 +55,15 @@ export const colorLightnessIterator = {
   100: "100%",
 };
 
+export const colorLightnessPrettyIterator = {
+  lightest: "95",
+  lighter: "80",
+  light: "60",
+  dark: "40",
+  darker: "20",
+  darkest: "5",
+}
+
 export const colorMdIterator = {
   50: "l95",
   100: "l90",
