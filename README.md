@@ -18,15 +18,17 @@ Minimal, future-proof native CSS variables (CSS Custom Properties) framework in 
 ### unpkg
 
 ```html
+<!-- Stable -->
 <link rel="stylesheet" href="https://unpkg.com/kladenets">
+
+<!-- Latest -->
+<link rel="stylesheet" href="https://unpkg.com/kladenets@next">
 ```
 
 ### jsDelivr
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/kladenets/kladenets.css">
-<!-- OR latest on GitHub -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sparanoid/kladenets/kladenets.css">
 ```
 
 ### Yarn
