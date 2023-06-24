@@ -31,15 +31,11 @@ Minimal, future-proof native CSS variables (CSS Custom Properties) framework in 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/kladenets/kladenets.css">
 ```
 
-### Yarn
+### Package Manager
 
 ```shell
+pnpm add kladenets
 yarn add kladenets
-```
-
-### npm
-
-```shell
 npm i -S kladenets
 ```
 
