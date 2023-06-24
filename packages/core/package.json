@@ -2,7 +2,7 @@
   "name": "kladenets",
   "version": "2.0.0-15",
   "description": "Future-proof native CSS variables in your :root",
-  "author": "Tunghsiao Liu",
+  "author": "Sparanoid",
   "license": "MIT",
   "main": "dist/base.css",
   "files": [

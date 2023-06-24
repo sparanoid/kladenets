@@ -1,5 +1,5 @@
 {
-  "author": "Tunghsiao Liu",
+  "author": "Sparanoid",
   "license": "MIT",
   "private": true,
   "workspaces": [
@@ -7,9 +7,9 @@
     "site"
   ],
   "scripts": {
-    "build-storybook": "yarn workspace kladenets build-storybook",
-    "core": "yarn workspace kladenets",
-    "site": "yarn workspace kladenets-site"
+    "build-storybook": "pnpm -F kladenets build-storybook",
+    "core": "pnpm -F kladenets",
+    "site": "pnpm -F kladenets-site"
   },
   "release-it": {
     "github": {
